@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inge Jane - Finance & Administrative Specialist</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Inter & Playfair Display -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            DEFAULT: '#0F172A',
+                            light: '#1E293B',
+                            accent: '#2563EB',
+                        },
+                        beige: {
+                            100: '#FDFBF7',
+                            200: '#F4EFE6',
+                            300: '#E8DFD1',
+                            dark: '#D5C7B3'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-beige-100 text-navy font-sans antialiased selection:bg-navy selection:text-white">
+
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 left-0 w-full bg-beige-100/80 backdrop-blur-md z-50 border-b border-beige-300/50">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="font-serif text-xl font-bold tracking-wide text-navy">INGE JANE<span class="text-beige-dark">.</span></a>
+            <div class="hidden md:flex space-x-8 text-sm font-medium text-slate-700">
+                <a href="#about" class="hover:text-navy transition-colors">Tentang Saya</a>
+                <a href="#experience" class="hover:text-navy transition-colors">Pengalaman</a>
+                <a href="#skills" class="hover:text-navy transition-colors">Keahlian</a>
+                <a href="#certification" class="hover:text-navy transition-colors">Sertifikasi</a>
+            </div>
+            <a href="#contact" class="bg-navy text-beige-100 hover:bg-navy-light px-5 py-2 rounded-full text-sm font-medium transition-all shadow-sm">
+                Hubungi Saya
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section (Berdasarkan gaya video) -->
+    <section class="pt-32 pb-20 px-6 max-w-6xl mx-auto min-h-screen flex flex-col justify-center">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <!-- Profil Image Card -->
+            <div class="lg:col-span-5 flex justify-center">
+                <div class="relative group">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-navy to-beige-dark rounded-3xl blur opacity-30 group-hover:opacity-60 transition duration-500"></div>
+                    <div class="relative w-64 h-80 sm:w-72 sm:h-96 rounded-2xl overflow-hidden border-4 border-white shadow-xl bg-beige-200">
+                        <img src="https://via.placeholder.com/400x500" alt="Inge Jane" class="w-full h-full object-cover object-center">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Content Card -->
+            <div class="lg:col-span-7 space-y-6">
+                <div class="inline-block px-4 py-1.5 bg-beige-200 text-navy text-xs font-semibold rounded-full tracking-wider uppercase border border-beige-300">
+                    Portfolio & Curriculum Vitae
+                </div>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold text-navy leading-tight">
+                    A Journey of <br>
+                    <span class="italic font-normal text-slate-600">Knowledge, Care & Impact</span>
+                </h1>
+                <p class="text-slate-600 text-lg leading-relaxed max-w-xl">
+                   [cite: 1] Lulusan Manajemen Universitas Tulungagung (IPK 3,73)[cite: 1]. Berkomitmen mengelola keuangan, *cash flow*, serta administrasi operasional secara teliti, terstruktur, dan akurat[cite: 1].
+                </p>
+
+                <!-- Cards Badge / Highlights (Inspirasi Layout Video) -->
+                <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 pt-4">
+                    <div class="p-4 rounded-xl bg-white/60 border border-beige-300 shadow-sm">
+                        <div class="text-navy font-bold text-lg">S1 Manajemen</div>
+                        <div class="text-slate-500 text-xs">IPK 3.73 / 4.00</div>[cite: 1]
+                    </div>
+                    <div class="p-4 rounded-xl bg-white/60 border border-beige-300 shadow-sm">
+                        <div class="text-navy font-bold text-lg">AR / AP</div>[cite: 1]
+                        <div class="text-slate-500 text-xs">Pengalaman Magang</div>[cite: 1]
+                    </div>
+                    <div class="p-4 rounded-xl bg-white/60 border border-beige-300 shadow-sm col-span-2 sm:col-span-1">
+                        <div class="text-navy font-bold text-lg">Cash Flow</div>[cite: 1]
+                        <div class="text-slate-500 text-xs">& Rekonsiliasi Kas</div>[cite: 1, 2]
+                    </div>
+                </div>
+
+                <!-- Action Links -->
+                <div id="contact" class="flex flex-wrap gap-4 pt-4">
+                    <a href="mailto:ingejane09@gmail.com" class="flex items-center gap-2 bg-navy text-white px-5 py-3 rounded-xl hover:bg-navy-light transition shadow-md">
+                        <i class="fa-regular fa-envelope"></i>
+                        <span>ingejane09@gmail.com</span>[cite: 1]
+                    </a>
+                    <a href="https://www.linkedin.com/in/inge-jane" target="_blank" class="flex items-center gap-2 bg-white text-navy border border-beige-300 px-5 py-3 rounded-xl hover:bg-beige-200 transition shadow-sm">
+                        <i class="fa-brands fa-linkedin"></i>
+                        <span>LinkedIn</span>[cite: 1]
+                    </a>
+                    <span class="flex items-center gap-2 bg-white text-slate-600 border border-beige-300 px-5 py-3 rounded-xl shadow-sm">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>0881036544007</span>[cite: 1]
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ringkasan / About Section -->
+    <section id="about" class="py-16 bg-beige-200/60 border-y border-beige-300">
+        <div class="max-w-4xl mx-auto px-6 text-center space-y-4">
+            <h2 class="font-serif text-2xl sm:text-3xl font-bold text-navy">Tentang Saya</h2>
+            <p class="text-slate-700 leading-relaxed">
+               [cite: 1] Memiliki pengalaman di bidang administrasi, pelayanan pelanggan, serta keuangan sebagai *Account Receivable & Account Payable*[cite: 1].[cite: 1] Memiliki kemampuan dalam pencatatan transaksi, pengelolaan *cash flow*, pengarsipan data, serta terbiasa menggunakan instrumen seperti Google Sheets, Ms. Office, dan Accurate[cite: 1, 2].[cite: 1] Berkomitmen untuk terus berkembang secara profesional di bidang keuangan dan administrasi perusahaan[cite: 1].
+            </p>
+        </div>
+    </section>
+
+    <!-- Section Pengalaman Kerja & Organisasi -->
+    <section id="experience" class="py-20 max-w-5xl mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="font-serif text-3xl sm:text-4xl font-bold text-navy">Pengalaman & Rekam Jejak</h2>
+            <p class="text-slate-500 mt-2">Perjalanan profesional dan aktivitas organisasi</p>
+        </div>
+
+        <div class="space-y-8">
+            <!-- Experience Item 1 -->
+            <div class="bg-white rounded-2xl p-6 sm:p-8 border border-beige-300 shadow-sm hover:shadow-md transition">
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between pb-4 border-b border-beige-200 mb-4 gap-2">
+                    <div>
+                        <h3 class="text-xl font-bold text-navy">Account Receivable & Account Payable (Magang)</h3>[cite: 1]
+                        <p class="text-slate-600 font-medium">The Malioboro Hotel and Conference Center</p>[cite: 1]
+                    </div>
+                    <span class="px-3 py-1 bg-beige-200 text-navy text-xs font-semibold rounded-full w-fit">
+                        Sep 2025 - Des 2025
+                    </span>[cite: 1]
+                </div>
+                <ul class="list-disc list-inside text-slate-600 space-y-2 text-sm leading-relaxed">
+                    <li>Memeriksa dan mencatat tagihan kredit pelanggan secara akurat sesuai prosedur perusahaan.</li>[cite: 1]
+                    <li>Melakukan rekonsiliasi akun piutang untuk memastikan kesesuaian data keuangan.</li>[cite: 1]
+                    <li>Mengidentifikasi dan menindaklanjuti tagihan yang mendekati atau telah melewati jatuh tempo.</li>[cite: 1]
+                    <li>Melakukan pencatatan, pengelolaan transaksi utang, serta verifikasi invoice supplier secara sistematis.</li>[cite: 1]
+                </ul>
+            </div>
+
+            <!-- Experience Item 2 -->
+            <div class="bg-white rounded-2xl p-6 sm:p-8 border border-beige-300 shadow-sm hover:shadow-md transition">
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between pb-4 border-b border-beige-200 mb-4 gap-2">
+                    <div>
+                        <h3 class="text-xl font-bold text-navy">Kasir & Admin</h3>[cite: 1]
+                        <p class="text-slate-600 font-medium">Galerie and Cafe Ajibram</p>[cite: 1]
+                    </div>
+                    <span class="px-3 py-1 bg-beige-200 text-navy text-xs font-semibold rounded-full w-fit">
+                        Feb 2025 - Ags 2025
+                    </span>[cite: 1]
+                </div>
+                <ul class="list-disc list-inside text-slate-600 space-y-2 text-sm leading-relaxed">
+                    <li>Melayani rata-rata 50+ transaksi per shift menggunakan mesin EDC dan sistem POS.</li>[cite: 1]
+                    <li>Pengelolaan administrasi operasional, pengarsipan data, serta rekonsiliasi kas harian.</li>[cite: 1]
+                    <li>Melakukan pemantauan stok barang dan mempromosikan program diskon (meningkatkan penjualan 10% dalam 2 bulan).</li>[cite: 1]
+                </ul>
+            </div>
+
+            <!-- Experience Item 3 -->
+            <div class="bg-white rounded-2xl p-6 sm:p-8 border border-beige-300 shadow-sm hover:shadow-md transition">
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between pb-4 border-b border-beige-200 mb-4 gap-2">
+                    <div>
+                        <h3 class="text-xl font-bold text-navy">Kasir</h3>[cite: 1]
+                        <p class="text-slate-600 font-medium">Kavido Frozen Mart</p>[cite: 1]
+                    </div>
+                    <span class="px-3 py-1 bg-beige-200 text-navy text-xs font-semibold rounded-full w-fit">
+                        Jul 2022 - Feb 2025
+                    </span>[cite: 1]
+                </div>
+                <ul class="list-disc list-inside text-slate-600 space-y-2 text-sm leading-relaxed">
+                    <li>Menangani transaksi penjualan harian (*online* & *offline*) dengan tingkat akurasi tinggi.</li>[cite: 1]
+                    <li>Mengelola dan memantau stok serta persediaan lebih dari 75 jenis produk.</li>[cite: 1]
+                </ul>
+            </div>
+
+            <!-- Experience Item 4 (Organisasi) -->
+            <div class="bg-white rounded-2xl p-6 sm:p-8 border border-beige-300 shadow-sm hover:shadow-md transition">
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between pb-4 border-b border-beige-200 mb-4 gap-2">
+                    <div>
+                        <h3 class="text-xl font-bold text-navy">Bendahara Organisasi</h3>[cite: 2]
+                        <p class="text-slate-600 font-medium">UKM Seni Universitas Tulungagung</p>[cite: 2]
+                    </div>
+                    <span class="px-3 py-1 bg-beige-200 text-navy text-xs font-semibold rounded-full w-fit">
+                        2025
+                    </span>[cite: 2]
+                </div>
+                <ul class="list-disc list-inside text-slate-600 space-y-2 text-sm leading-relaxed">
+                    <li>Bertanggung jawab dalam pencatatan arus kas, rekapitulasi pelaporan keuangan, dan penyusunan anggaran.</li>[cite: 2]
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-beige-200/50 border-t border-beige-300">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-navy">Keahlian & Softwares</h2>
+                <p class="text-slate-500 mt-2">Kompetensi teknis dan instrumen kerja yang dikuasai</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Hard Skills & Softwares -->
+                <div class="bg-white p-6 sm:p-8 rounded-2xl border border-beige-300 shadow-sm space-y-6">
+                    <h3 class="text-lg font-bold text-navy border-b border-beige-200 pb-3 flex items-center gap-2">
+                        <i class="fa-solid fa-laptop-code text-navy"></i> Software & Kemampuan Teknis
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1.5 bg-beige-100 border border-beige-300 rounded-lg text-sm text-navy font-medium">Ms. Office (Excel, Word, PowerPoint)</span>[cite: 1, 2]
+                        <span class="px-3 py-1.5 bg-beige-100 border border-beige-300 rounded-lg text-sm text-navy font-medium">Google Sheets</span>[cite: 1, 2]
+                        <span class="px-3 py-1.5 bg-beige-100 border border-beige-300 rounded-lg text-sm text-navy font-medium">Accurate Software</span>[cite: 2]
+                        <span class="px-3 py-1.5 bg-beige-100 border border-beige-300 rounded-lg text-sm text-navy font-medium">Canva</span>[cite: 2]
+                    </div>
+                    <div class="space-y-2 pt-2">
+                        <p class="text-xs font-semibold text-slate-400 uppercase tracking-wider">Bidang Keahlian Utama</p>
+                        <ul class="text-sm text-slate-600 space-y-1">
+                            <li>• Administrasi Keuangan & Cash Flow</li>[cite: 2]
+                            <li>• Utang & Piutang Perusahaan (AR/AP)</li>[cite: 2]
+                            <li>• Pencatatan & Rekonsiliasi Transaksi</li>[cite: 2]
+                            <li>• Manajemen Kas & Stok Barang</li>[cite: 2]
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Personal Skills & Languages -->
+                <div class="bg-white p-6 sm:p-8 rounded-2xl border border-beige-300 shadow-sm space-y-6">
+                    <h3 class="text-lg font-bold text-navy border-b border-beige-200 pb-3 flex items-center gap-2">
+                        <i class="fa-solid fa-user-check text-navy"></i> Soft Skills & Bahasa
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1.5 bg-beige-100 border border-beige-300 rounded-lg text-sm text-navy font-medium">Teliti & Detail-Oriented</span>[cite: 1, 2]
+                        <span class="px-3 py-1.5 bg-beige-100 border border-beige-300 rounded-lg text-sm text-navy font-medium">Komunikatif</span>[cite: 1, 2]
+                        <span class="px-3 py-1.5 bg-beige-100 border border-beige-300 rounded-lg text-sm text-navy font-medium">Kerja Sama Tim</span>[cite: 1, 2]
+                        <span class="px-3 py-1.5 bg-beige-100 border border-beige-300 rounded-lg text-sm text-navy font-medium">Disiplin</span>[cite: 2]
+                        <span class="px-3 py-1.5 bg-beige-100 border border-beige-300 rounded-lg text-sm text-navy font-medium">Manajemen Waktu</span>[cite: 2]
+                    </div>
+                    <div class="pt-4 border-t border-beige-200">
+                        <p class="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Kemampuan Bahasa</p>
+                        <div class="flex gap-4 text-sm text-slate-700">
+                            <div><strong>Bahasa Indonesia:</strong> Aktif</div>[cite: 2]
+                            <div><strong>Bahasa Inggris:</strong> Pasif</div>[cite: 2]
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certification Section -->
+    <section id="certification" class="py-20 max-w-5xl mx-auto px-6">
+        <div class="text-center mb-12">
+            <h2 class="font-serif text-3xl sm:text-4xl font-bold text-navy">Sertifikasi & Pelatihan</h2>
+            <p class="text-slate-500 mt-2">Kompetensi tersertifikasi secara profesional</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div class="p-6 bg-white rounded-2xl border border-beige-300 shadow-sm flex items-start gap-4">
+                <div class="p-3 bg-beige-200 text-navy rounded-xl">
+                    <i class="fa-solid fa-certificate text-2xl"></i>
+                </div>
+                <div>
+                    <h4 class="font-bold text-navy">Kewirausahaan Industri Jenjang IV</h4>[cite: 2]
+                    <p class="text-sm text-slate-500">LSP Wirausaha Kompeten Nusantara (2026)</p>[cite: 2]
+                </div>
+            </div>
+
+            <div class="p-6 bg-white rounded-2xl border border-beige-300 shadow-sm flex items-start gap-4">
+                <div class="p-3 bg-beige-200 text-navy rounded-xl">
+                    <i class="fa-solid fa-id-badge text-2xl"></i>
+                </div>
+                <div>
+                    <h4 class="font-bold text-navy">Staf Sumber Daya Manusia</h4>[cite: 2]
+                    <p class="text-sm text-slate-500">LSP MSDM Cipta Unggul (2026)</p>[cite: 2]
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-navy text-beige-100 py-12 border-t border-navy-light">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center gap-6">
+            <div>
+                <h3 class="font-serif text-xl font-bold">INGE JANE</h3>
+                <p class="text-xs text-slate-400 mt-1">Tulungagung, Jawa Timur, Indonesia</p>[cite: 1]
+            </div>
+            <div class="flex gap-6 text-sm">
+                <a href="mailto:ingejane09@gmail.com" class="hover:text-white transition">Email</a>[cite: 1]
+                <a href="https://www.linkedin.com/in/inge-jane" target="_blank" class="hover:text-white transition">LinkedIn</a>[cite: 1]
+            </div>
+            <div class="text-xs text-slate-400">
+                © 2026 Inge Jane. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
